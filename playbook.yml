@@ -15,3 +15,17 @@
       update_cache: yes
   - name: jenkins installing
     script: script.sh
+- name: installing java and docer
+  become: yes
+  hosts: group
+  tasks:
+  - name: installing docker
+    apt:
+      name: docker.io
+      state: latest
+      update_cache: yes
+  - name: instaling java
+    apt:
+      name: openjdk-17-jdk
+      state: latest
+      update_cache: yes
