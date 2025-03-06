@@ -1,4 +1,4 @@
-----
+---
 - name: installtion of java, docker and jenkins
   become: yes
   hosts: localhost
