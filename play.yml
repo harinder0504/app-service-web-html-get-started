@@ -1,7 +1,7 @@
 ---
 - name: installing nginx
   become: yes
-  hosts: 172.31.95.123   
+  hosts: localhost   
   tasks:
   - name: install nginx
     apt:
