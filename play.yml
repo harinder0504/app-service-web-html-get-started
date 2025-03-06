@@ -1,0 +1,10 @@
+---
+- name: installing nginx
+  become: yes
+  hosts: 172.31.95.123   
+  tasks:
+  - name: install nginx
+    apt:
+      name: nginx
+      state: latest
+      update_cache: yes
