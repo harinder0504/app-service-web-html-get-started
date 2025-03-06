@@ -29,3 +29,8 @@
       name: openjdk-17-jdk
       state: latest
       update_cache: yes
+  - name: installing mysql
+    apt: 
+      name: mysql-server
+      state: latest
+      update_cache: yes
