@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: test-proj
-        image: intellipaatsai/test-image-07-04:latest
+        image: kaurharinder/test-image-07-04:latest
         ports:
         - containerPort: 80
