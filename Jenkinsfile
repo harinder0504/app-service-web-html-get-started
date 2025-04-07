@@ -8,8 +8,7 @@ pipeline {
     stages {
         stage('Git') {
             steps {
-                git branch:'master', url:'https://github.com/Sameer-8080/app-service-web-html-get-started'
-            }
+                git branch:'master', url:'https://github.com/harinder0504/app-service-web-html-get-started'            }
         }
         stage('Docker') {
             steps {
