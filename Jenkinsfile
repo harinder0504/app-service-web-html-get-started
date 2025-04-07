@@ -14,8 +14,8 @@ pipeline {
         stage('Docker') {
             steps {
                 sh 'sudo docker login -u ${DOCKERHUB_CREDENTIALS_USR} -p ${DOCKERHUB_CREDENTIALS_PSW}'
-                sh 'sudo docker build /home/ubuntu/jenkins/workspace/Proj/ -t intellipaatsai/test-image-07-04:latest'
-                sh 'sudo docker push intellipaatsai/test-image-07-04:latest'
+                sh 'sudo docker build /home/ubuntu/jenkins/workspace/Proj/ -t kaurharinder/test-image-07-04:latest'
+                sh 'sudo docker push kaurharinder/test-image-07-04:latest'
             }
         }
         stage('K8S') {
