@@ -20,7 +20,9 @@ pipeline {
         }
         stage('K8S') {
             steps {
+                sh 'kubectl delete deploy myapp-deployment'
                 sh 'kubectl apply -f manifest/deployment.yaml'
+                sh 'kubectl delete service myapp-service'
                 sh 'kubectl apply -f manifest/nodeport.yaml'
             }
         }
